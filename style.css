@@ -1,0 +1,70 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: none;
+}
+
+header {
+    height: 100px;
+    padding-top: 18px;
+}
+
+a:hover {
+  text-decoration: none;
+  text-transform: none;
+}
+
+.title-first {
+  font-weight: bold;
+  font-size: 25px;
+  color: #316789;
+}
+
+.title-second {
+  font-weight: bold;
+  font-size: 25px;
+  color: #77a6c7;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.menu a {
+  font-size: 16px;
+  color: black;
+}
+
+select.form-select {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  width: 190px;
+}
+
+.menu-option {
+  text-align: center;
+}
+
+.main-section {
+  background-color: #e8eef3;
+}
+
+footer {
+    background-color: #E8EEF3;
+    height: 442px;
+}
+
+/*Karakterstílusok*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,800");
