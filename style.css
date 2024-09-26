@@ -11,9 +11,23 @@ a {
   text-transform: none;
 }
 
+hr {
+  background-color: #e55c4f;
+  width: 100px;
+  height: 5px;
+}
+
 header {
-    height: 100px;
-    padding-top: 18px;
+  height: 100px;
+  width: 100%;
+  padding-top: 12px;
+  position: fixed;
+  background-color: white;
+  z-index: 1000;
+}
+
+nav {
+  box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.04);
 }
 
 a:hover {
@@ -50,7 +64,7 @@ select.form-select {
   box-shadow: none;
   outline: none;
   cursor: pointer;
-  width: 190px;
+  width: 195px;
 }
 
 .menu-option {
@@ -59,11 +73,108 @@ select.form-select {
 
 .main-section {
   background-color: #e8eef3;
+  padding-top: 100px;
+  height: 669px;
+  margin-bottom: 70px;
+}
+
+.main-section-text {
+  padding-left: 210px;
+  padding-top: 70px;
+}
+
+#first-hr {
+  margin-left: 230px;
+  margin-top: 84px;
+}
+
+.main-section-text h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.main-section-text-paragraph {
+  font-size: 16px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.main-section-text button {
+  background-color: #e55c4f;
+  color: white;
+  border: 0px;
+  width: 200px;
+  height: 67px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.main-section-image img {
+  position: absolute;
+  height: 570px;
+  left: 1000px;
+  top: -495px;
+}
+
+.orange-text {
+  color: #e55c4f;
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.courses-exams-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#second-hr {
+  margin-left: -154px;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.courses-exams h2 {
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.courses-exams button {
+  background-color: #316789;
+  border: 0px;
+  border-radius: 16px;
+  height: 35px;
+  width: 107px;
+  color: white;
+}
+
+.courses-exams-cards-container {
+  background-color: #E8EEF3;
+  border-radius: 12px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.courses-exams-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.courses-exams h3 {
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.courses-exams img {
+  height: 252px;
+  width: 396px;
 }
 
 footer {
-    background-color: #E8EEF3;
-    height: 442px;
+  background-color: #e8eef3;
+  height: 442px;
 }
 
 /*Karakterstílusok*/
