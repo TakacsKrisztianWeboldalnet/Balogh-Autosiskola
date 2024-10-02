@@ -1,5 +1,6 @@
 body {
   font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }
 
 ul {
@@ -36,13 +37,13 @@ a:hover {
 }
 
 .title-first {
-  font-weight: bold;
+  font-weight: 900;
   font-size: 25px;
   color: #316789;
 }
 
 .title-second {
-  font-weight: bold;
+  font-weight: 900;
   font-size: 25px;
   color: #77a6c7;
 }
@@ -79,13 +80,13 @@ select.form-select {
 }
 
 .main-section-text {
-  padding-left: 210px;
+  padding-left: 80px;
   padding-top: 70px;
 }
 
 #first-hr {
-  margin-left: 230px;
-  margin-top: 84px;
+  margin-left: 50px;
+  margin-top: 85px;
 }
 
 .main-section-text h1 {
@@ -99,22 +100,22 @@ select.form-select {
   margin-bottom: 45px;
 }
 
-.main-section-text button {
+.orange-button {
   background-color: #e55c4f;
   color: white;
-  border: 0px;
+  border: 0;
   width: 200px;
   height: 67px;
   border-radius: 12px;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .main-section-image img {
-  position: absolute;
   height: 570px;
-  left: 1000px;
-  top: -495px;
+  width: auto;
+  right: 0;
+  top: 0;
 }
 
 .orange-text {
@@ -123,10 +124,15 @@ select.form-select {
   font-weight: 900;
 }
 
+.courses-exams {
+  padding-bottom: 50px;
+}
+
 .courses-exams-title {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  padding-bottom: 30px;
 }
 
 #second-hr {
@@ -140,9 +146,14 @@ select.form-select {
   font-weight: 900;
 }
 
+.courses-exams h3 {
+  font-size: 23px;
+  font-weight: 900;
+}
+
 .courses-exams button {
   background-color: #316789;
-  border: 0px;
+  border: 0;
   border-radius: 16px;
   height: 35px;
   width: 107px;
@@ -150,31 +161,234 @@ select.form-select {
 }
 
 .courses-exams-cards-container {
-  background-color: #E8EEF3;
+  background-color: #e8eef3;
+  width: 100%;
   border-radius: 12px;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .courses-exams-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+  gap: 7.5px;
+  padding: 15px;
 }
 
-.courses-exams h3 {
+.courses-exams .card {
+  height: 368px;
+  margin: 7.5px;
+  border-radius: 8px;
+}
+
+.card-title {
+  font-weight: 900;
   font-size: 23px;
+  padding-top: 15px;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.news {
+  background-image: url("./Images/Group\ 158.png");
+  color: white;
+  padding-top: 50px;
+}
+
+.news a {
+  color: white;
+  font-weight: bold;
+}
+
+.news-cards {
+  padding: 0;
+}
+
+.news-card {
+  background-color: rgb(243, 246, 249, 0.1);
+  border-radius: 8px;
+  margin: 8px;
+  border: 0;
+  padding: 40px;
+}
+
+.news-card-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.news-card-top h3 {
+  font-weight: 900;
+  font-size: 23px;
+}
+
+.news-card-date {
+  font-weight: bold !important;
+}
+
+.news-card-tags {
+  display: flex;
+  gap: 15px;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.news-card-tags button {
+  background-color: #77a6c7;
+  color: white;
+  font-weight: bold;
+}
+
+.news-card-tags button:hover {
+  color: white;
+  cursor: default;
+}
+
+.news-card p {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+#news-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 55px;
+}
+
+#news-btn {
+  background-color: white;
+  color: #102647;
+  font-weight: bold;
+  height: 67px;
+  width: 257px;
+  border-radius: 12px;
+}
+
+.button-icon {
+  padding-bottom: 2px;
+}
+
+.application {
+  display: flex;
+}
+
+.application-left {
+  padding-top: 30px;
+}
+
+.application-left p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#application-btn {
+  width: 165px;
+}
+
+.application-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 30px;
+}
+
+.application-title hr {
+  margin-left: -125px;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.application-title h2 {
+  font-size: 35px;
   font-weight: 900;
 }
 
-.courses-exams img {
-  height: 252px;
+#bottom-form-select {
+  border: 0;
+  border-radius: 12px;
   width: 396px;
+  height: 69px;
+  padding-right: 260px;
+  margin-bottom: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png")
+    #e8eef3 no-repeat 96% !important;
+}
+
+#bottom-form-select:hover {
+  cursor: pointer;
+}
+
+.application-right img {
+  width: 100%;
+  height: 100%;
+}
+
+.application-right {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.application-right::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 45px;
+  width: 85%;
+  height: 75%;
+  border: 4px solid #77a6c7;
+  border-radius: 15px;
+  transform: rotate(-8deg); /* Tilt the frame */
+  z-index: 2;
 }
 
 footer {
   background-color: #e8eef3;
   height: 442px;
+  padding-top: 80px;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer li {
+  margin-bottom: 7px;
+}
+
+.footer-title {
+  font-weight: 900;
+  font-size: 23px;
+  padding-bottom: 18px;
+}
+
+#footer-logo {
+  padding-bottom: 15px;
+}
+
+#copyright {
+  color: #77A6C7;
+  text-align: right;
+}
+
+#footer-content-other {
+  margin-left: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .courses-exams .card {
+    height: 231px;
+  }
 }
 
 /*Karakterstílusok*/

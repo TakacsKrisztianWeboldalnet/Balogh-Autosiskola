@@ -1,264 +1,349 @@
 <!DOCTYPE html>
 <html lang="hu">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Balogh Autósiskola</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="main">
-      <header>
-        <nav class="navbar">
-          <div class="container">
-            <div class="home">
-              <p>
-                <span class="title-first">Balogh</span>
-                <span class="title-second">Oktató Kft.</span>
-              </p>
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <div class="home">
+                        <p>
+                            <span class="title-first">Balogh</span>
+                            <span class="title-second">Oktató Kft.</span>
+                        </p>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Főoldal</a></li>
+                            <li>
+                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                    <option selected>Tanfolyamok és Vizsgák</option>
+                                    <option class="menu-option" value="category">
+                                        Kategóriás jogosítvány
+                                    </option>
+                                    <option class="menu-option" value="gki">GKI</option>
+                                    <option class="menu-option" value="operator">
+                                        Gépkezelő
+                                    </option>
+                                    <option class="menu-option" value="adr-driver">
+                                        ADR Gépkocsivezető
+                                    </option>
+                                    <option class="menu-option" value="freight">
+                                        Árufuvarozó tanfolyam<br />
+                                        (szakmai irányító)
+                                    </option>
+                                    <option class="menu-option" value="adr-security-consultant">
+                                        ADR Biztonsági Tanácsadó
+                                    </option>
+                                </select>
+                            </li>
+                            <li><a href="#">Információk</a></li>
+                            <li><a href="#">Jelentkezés</a></li>
+                            <li><a href="#">Kapcsolat</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="main-section">
+            <div class="row">
+                <div class="col-md-1">
+                    <hr id="first-hr" />
+                </div>
+                <div class="col-md-5">
+                    <div class="main-section-text">
+                        <p class="orange-text">Lorem ipsum</p>
+                        <h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h1>
+                        <p class="main-section-text-paragraph">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                            erat, sed diam voluptua.
+                        </p>
+                        <a href="#"><button class="orange-button" type="button">KAPCSOLAT</button></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="main-section-image">
+                        <img src="./Images/car-orange-traffic-cones-lesson-driving-school-concept.png"
+                            alt="Oktatás gyakorlópályán a bólyák között." />
+                    </div>
+                </div>
             </div>
-            <div class="menu">
-              <ul>
-                <li><a href="#">Főoldal</a></li>
-                <li>
-                  <select
-                    class="form-select form-select-lg mb-3"
-                    aria-label=".form-select-lg example"
-                  >
-                    <option selected>Tanfolyamok és Vizsgák</option>
-                    <option class="menu-option" value="category">
-                      Kategóriás jogosítvány
-                    </option>
-                    <option class="menu-option" value="gki">GKI</option>
-                    <option class="menu-option" value="operator">
-                      Gépkezelő
-                    </option>
-                    <option class="menu-option" value="adr-driver">
-                      ADR Gépkocsivezető
-                    </option>
-                    <option class="menu-option" value="freight">
-                      Árufuvarozó tanfolyam<br />
-                      (szakmai irányító)
-                    </option>
-                    <option class="menu-option" value="adr-security-consultant">
-                      ADR Biztonsági Tanácsadó
-                    </option>
-                  </select>
-                </li>
-                <li><a href="#">Információk</a></li>
-                <li><a href="#">Jelentkezés</a></li>
-                <li><a href="#">Kapcsolat</a></li>
-              </ul>
+        </section>
+        <section class="courses-exams">
+            <div class="container">
+                <div class="courses-exams-title">
+                    <hr id="second-hr" />
+                    <h2>Tanfolyamok és Vizsgák</h2>
+                </div>
+                <div class="courses-exams-cards-container">
+                    <ul class="courses-exams-cards">
+                        <div class="row">
+                            <div class="col-6 col-md-4">
+                                <li class="courses-exams card">
+                                    <img class="card-img-top"
+                                        src="./Images/elegant-woman-driver-looking-backseat-smiling-happy.png"
+                                        alt=" Egy elegáns női sofőr mosolyogva néz hátra az autó hátsó ülésére." />
+                                    <div class="card-bottom">
+                                        <h3 class="card-title">Kategóriás jogosítvány</h3>
+                                        <a href="#"><button>Tovább <img class="button-icon"
+                                                    src="./Images/arrow-right.svg" /></button></a>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <li class="courses-exams card">
+                                    <img class="card-img-top"
+                                        src="./Images/auto-business-car-sale-consumerism-people-concept.png"
+                                        alt="Autóvásárlással kapcsolatos üzleti szituáció, emberek és fogyasztói koncepció bemutatása." />
+                                    <div class="card-bottom">
+                                        <h3 class="card-title">GKI</h3>
+                                        <a href="#"><button>Tovább <img class="button-icon"
+                                                    src="./Images/arrow-right.svg" /></button></a>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <li class="courses-exams card">
+                                    <img class="card-img-top"
+                                        src="./Images/engineer-staff-male-warehouse-worker-hard-hat-working-walking-through-logistics-center-warehouse-factory-construction-site-logistics-architect-forklift.png"
+                                        alt="Mérnök és férfi raktári munkás sétál egy logisztikai központban, munkavédelmi sisakot viselve, raktári környezetben." />
+                                    <div class="card-bottom">
+                                        <h3 class="card-title">Gépkezelő</h3>
+                                        <a href="#"><button>Tovább <img class="button-icon"
+                                                    src="./Images/arrow-right.svg" /></button></a>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <li class="courses-exams card">
+                                    <img class="card-img-top"
+                                        src="./Images/man-by-truck-guy-delivery-uniform-man-with-clipboard.png"
+                                        alt="Egy férfi szállítói egyenruhában, teherautó mellett állva, jegyzettömbbel a kezében." />
+                                    <div class="card-bottom">
+                                        <h3 class="card-title">ADR Gépkocsivezető</h3>
+                                        <a href="#"><button>Tovább <img class="button-icon"
+                                                    src="./Images/arrow-right.svg" /></button></a>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <li class="courses-exams card">
+                                    <img class="card-img-top"
+                                        src="./Images/professional-middle-aged-truck-driver-casual-clothes-driving-truck-vehicle-delivering-cargo-destination.png"
+                                        alt=" Középkorú, professzionális teherautó sofőr laza öltözékben, áruszállítást végez, úton a célállomás felé." />
+                                    <div class="card-bottom">
+                                        <h3 class="card-title">Árufuvarozói tanfolyam</h3>
+                                        <p class="card-text">(Szakmai irányító)</p>
+                                        <a href="#"><button>Tovább <img class="button-icon"
+                                                    src="./Images/arrow-right.svg" /></button></a>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <li class="courses-exams card">
+                                    <img class="card-img-top"
+                                        src="./Images/smiling-businessman-eyeglasses-sitting-by-table-cafe-with-laptop-computer-while-using-smartphone-writing-something.png"
+                                        alt="Mosolygó üzletember szemüvegben, egy kávézóban ül asztalnál laptop mellett, miközben okostelefonját használja és jegyzetel." />
+                                    <div class="card-bottom">
+                                        <h3 class="card-title">Biztonsági tanácsadó</h3>
+                                        <a href="#"><button>Tovább <img class="button-icon"
+                                                    src="./Images/arrow-right.svg" /></button></a>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
             </div>
-          </div>
-        </nav>
-      </header>
-      <section class="main-section">
-        <div class="container row">
-          <div class="col-md-2">
-            <hr id="first-hr"/>
-          </div>
-          <div class="main-section-text col-md-8">
-            <p class="orange-text">Lorem ipsum</p>
-            <h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h1>
-            <p class="main-section-text-paragraph">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua.
-            </p>
-            <a href="#"><button type="button">Kapcsolat</button></a>
-          </div>
-          <div class="main-section-image col-md-3">
-            <img
-              src="./Images/car-orange-traffic-cones-lesson-driving-school-concept.png"
-              alt="Oktatás gyakorlópályán a bólyák között."
-            />
-          </div>
-        </div>
-      </section>
-      <section class="courses-exams">
-        <div class="container">
-          <div class="courses-exams-title">
-             <hr id="second-hr"/>
-            <h2>Tanfolyamok és Vizsgák</h2>
-          </div>
-          <div class="courses-exams-cards-container">
-            <ul class="courses-exams-cards">
-              <li class="courses-exams card">
-                <img class="card-img-top"
-                  src="./Images/elegant-woman-driver-looking-backseat-smiling-happy.png"
-                  alt=" Egy elegáns női sofőr mosolyogva néz hátra az autó hátsó ülésére."
-                />
-                <h3 class="card-title">Kategóriás jogosítvány</h3>
-                <a href="#"><button>Tovább →</button></a>
-              </li>
-              <li class="courses-exams card">
-                <img class="card-img-top"
-                  src="./Images/auto-business-car-sale-consumerism-people-concept.png"
-                  alt="Autóvásárlással kapcsolatos üzleti szituáció, emberek és fogyasztói koncepció bemutatása."
-                />
-                <h3 class="card-title">GKI</h3>
-                <a href="#"><button>Tovább →</button></a>
-              </li>
-              <li class="courses-exams card">
-                <img class="card-img-top"
-                  src="./Images/engineer-staff-male-warehouse-worker-hard-hat-working-walking-through-logistics-center-warehouse-factory-construction-site-logistics-architect-forklift.png"
-                  alt="Mérnök és férfi raktári munkás sétál egy logisztikai központban, munkavédelmi sisakot viselve, raktári környezetben."
-                />
-                <h3 class="card-title">Gépkezelő</h3>
-                <a href="#"><button>Tovább →</button></a>
-              </li>
-              <li class="courses-exams card">
-                <img class="card-img-top"
-                  src="./Images/man-by-truck-guy-delivery-uniform-man-with-clipboard.png"
-                  alt="Egy férfi szállítói egyenruhában, teherautó mellett állva, jegyzettömbbel a kezében."
-                />
-                <h3 class="card-title">ADR Gépkocsivezető</h3>
-                <a href="#"><button>Tovább →</button></a>
-              </li>
-              <li class="courses-exams card">
-                <img class="card-img-top"
-                  src="./Images/professional-middle-aged-truck-driver-casual-clothes-driving-truck-vehicle-delivering-cargo-destination.png"
-                  alt=" Középkorú, professzionális teherautó sofőr laza öltözékben, áruszállítást végez, úton a célállomás felé."
-                />
-                <h3 class="card-title">Árufuvarozói tanfolyam</h3>
-                <p class="card-text">(Szakmai irányító)</p>
-                <a href="#"><button>Tovább →</button></a>
-              </li>
-              <li class="courses-exams card">
-                <img class="card-img-top"
-                  src="./Images/smiling-businessman-eyeglasses-sitting-by-table-cafe-with-laptop-computer-while-using-smartphone-writing-something.png"
-                  alt="Mosolygó üzletember szemüvegben, egy kávézóban ül asztalnál laptop mellett, miközben okostelefonját használja és jegyzetel."
-                />
-                <h3 class="card-title">Biztonsági tanácsadó</h3>
-                <a href="#"><button>Tovább →</button></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="news">
-        <div class="container">
-          <ul class="news-cards">
-            <li class="news-card">
-              <div class="news-card-top">
-                <h3>B kategóriás tanfolyam indul</h3>
-                <p class="news-card-date"></p>
-              </div>
-              <ul class="news-card-tags">
-                <li>Vizsga</li>
-                <li>Tanfolyam</li>
-              </ul>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam
-              </p>
-              <a href="#">Tovább</a>
-            </li>
-            <li class="news-card">
-              <div class="news-card-top">
-                <h3>B kategóriás tanfolyam indul</h3>
-                <p class="news-card-date">2022.08.30.</p>
-              </div>
-              <ul class="news-card-tags">
-                <li>Vizsga</li>
-                <li>Tanfolyam</li>
-              </ul>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam
-              </p>
-              <a href="#">Tovább</a>
-            </li>
-            <li class="news-card">
-              <div class="news-card-top">
-                <h3>B kategóriás tanfolyam indul</h3>
-                <p class="news-card-date">2022.08.30.</p>
-              </div>
-              <ul class="news-card-tags">
-                <li>Vizsga</li>
-                <li>Tanfolyam</li>
-              </ul>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam
-              </p>
-              <a href="#">Tovább</a>
-            </li>
-            <li class="news-card">
-              <div class="news-card-top">
-                <h3>B kategóriás tanfolyam indul</h3>
-                <p class="news-card-date">2022.08.30.</p>
-              </div>
-              <ul class="news-card-tags">
-                <li>Vizsga</li>
-                <li>Tanfolyam</li>
-              </ul>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam
-              </p>
-              <a href="#">Tovább</a>
-            </li>
-            <li class="news-card">
-              <div class="news-card-top">
-                <h3>B kategóriás tanfolyam indul</h3>
-                <p class="news-card-date">2022.08.30.</p>
-              </div>
-              <ul class="news-card-tags">
-                <li>Vizsga</li>
-                <li>Tanfolyam</li>
-              </ul>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam
-              </p>
-              <a href="#">Tovább</a>
-            </li>
-          </ul>
-          <button type="button">További Hírek</button>
-        </div>
-      </section>
-      <section class="application">
-        <div class="container">
-          <div class="application-left">
-            <hr />
-            <h2>Jelentkezés vizsgára/tanfolyamra</h2>
-          </div>
-          <div class="application-right">
-            <img
-              src="./Images/driver-is-auto-school-instructor-female-student-examination-car.png"
-              alt="Autósiskolai oktató férfi, aki egy női tanulót vizsgáztat az oktató autóban."
-            />
-          </div>
-        </div>
-      </section>
-      <footer>
-        <div class="container">
-          <div class="footer-content">
-            <p>
-              <span class="title-first">Balogh</span>
-              <span class="title-second">Autósiskola</span>
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua.
-            </p>
-          </div>
-          <div class="footer-content"></div>
-          <div class="footer-content"></div>
-          <div class="footer-content"></div>
-        </div>
-      </footer>
+        </section>
+        <section class="news">
+            <div class="container">
+                <ul class="news-cards">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <li class="news-card">
+                                <div class="news-card-top">
+                                    <h3>B kategóriás tanfolyam indul</h3>
+                                    <p class="news-card-date">2022.08.30.</p>
+                                </div>
+                                <ul class="news-card-tags">
+                                    <li><button class="btn" type="button">Vizsga</button></li>
+                                    <li><button class="btn" type="button">Tanfolyam</button></li>
+                                </ul>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                    aliquyam
+                                </p>
+                                <a href="#">Tovább <img class="button-icon" src="./Images/arrow-right.svg" /></a>
+                            </li>
+                        </div>
+                        <div class="col-md-6">
+                            <li class="news-card">
+                                <div class="news-card-top">
+                                    <h3>B kategóriás tanfolyam indul</h3>
+                                    <p class="news-card-date">2022.08.30.</p>
+                                </div>
+                                <ul class="news-card-tags">
+                                    <li><button class="btn" type="button">Vizsga</button></li>
+                                    <li><button class="btn" type="button">Tanfolyam</button></li>
+                                </ul>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                    aliquyam
+                                </p>
+                                <a href="#">Tovább <img class="button-icon" src="./Images/arrow-right.svg" /></a>
+                            </li>
+                        </div>
+                        <div class="col-md-6">
+                            <li class="news-card">
+                                <div class="news-card-top">
+                                    <h3>B kategóriás tanfolyam indul</h3>
+                                    <p class="news-card-date">2022.08.30.</p>
+                                </div>
+                                <ul class="news-card-tags">
+                                    <li><button class="btn" type="button">Vizsga</button></li>
+                                    <li><button class="btn" type="button">Tanfolyam</button></li>
+                                </ul>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                    aliquyam
+                                </p>
+                                <a href="#">Tovább <img class="button-icon" src="./Images/arrow-right.svg" /></a>
+                            </li>
+                        </div>
+                        <div class="col-md-6">
+                            <li class="news-card">
+                                <div class="news-card-top">
+                                    <h3>B kategóriás tanfolyam indul</h3>
+                                    <p class="news-card-date">2022.08.30.</p>
+                                </div>
+                                <ul class="news-card-tags">
+                                    <li><button class="btn" type="button">Vizsga</button></li>
+                                    <li><button class="btn" type="button">Tanfolyam</button></li>
+                                </ul>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                    aliquyam
+                                </p>
+                                <a href="#">Tovább <img class="button-icon" src="./Images/arrow-right.svg" /></a>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+                <div id="news-btn-container" class="row">
+                    <span class="col-md-5"></span>
+                    <span id="news-btn-container" class="col-md-2">
+                        <a href="#"><button id="news-btn" class="btn" type="button">TOVÁBBI HÍREK <img
+                                    src="./Images/Icon ionic-ios-arrow-down.svg"></button></a>
+                    </span>
+                    <span class="col-md-5"></span>
+                </div>
+            </div>
+        </section>
+        <section class="application">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="application-left">
+                            <div class="application-title">
+                                <hr />
+                                <h2>Jelentkezés vizsgára/tanfolyamra</h2>
+                            </div>
+                            <p>Típus kiválasztás</p>
+                            <select id="bottom-form-select">
+                                <option selected class="menu-option" value="B">
+                                    B kategóriás
+                                </option>
+                                <option class="menu-option" value="C">
+                                    C kategóriás
+                                </option>
+                                <option class="menu-option" value="CE">
+                                    CE kategóriás
+                                </option>
+                                <option class="menu-option" value="D">
+                                    D kategóriás
+                                </option>
+                            </select>
+                            <a href="#"><button id="application-btn" class="orange-button"
+                                    type="button">TOVÁBB</button></a>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="application-right">
+                            <img src="./Images/driver-is-auto-school-instructor-female-student-examination-car.png"
+                                alt="Autósiskolai oktató férfi, aki egy női tanulót vizsgáztat az oktató autóban." />
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p id="footer-logo">
+                                <span class="title-first">Balogh</span>
+                                <span class="title-second">Autósiskola</span>
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                erat, sed diam voluptua.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <div id="footer-content-other">
+                                <p class="footer-title">Oldalak</p>
+                                <ul>
+                                    <li>GKI</li>
+                                    <li>Árufuvarozás</li>
+                                    <li>Gépkezelő</li>
+                                    <li>ADR</li>
+                                    <li>Vállalkozói tanfolyam</li>
+                                    <li>Kategóriás jogosítvány</li>
+                                    <li>Kapcsolat</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="footer-title">Dokumentumok</p>
+                            <ul>
+                                <li>Vizsgainformációk</li>
+                                <li>Adatvédelmi irányelvek</li>
+                                <li>Cookie tájékoztató</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="footer-title">Kapcsolat</p>
+                            <ul>
+                                <li>+36 30 123 4567</li>
+                                <li>info@ baloghautosiskola.hu</li>
+                                <li>1234 Lorem, Ipsum utca 12.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p id="copyright">Copyright © Balogh Autósiskola. Minden jog fenntartva.</p>
+                </div>
+                <div class="footer-content"></div>
+                <div class="footer-content"></div>
+                <div class="footer-content"></div>
+            </div>
+        </footer>
     </div>
     <script src="bootstrap.js"></script>
-  </body>
+</body>
+
 </html>
