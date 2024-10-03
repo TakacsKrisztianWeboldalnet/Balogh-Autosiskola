@@ -13,6 +13,7 @@ a {
 }
 
 hr {
+  position: absolute;
   background-color: #e55c4f;
   width: 100px;
   height: 5px;
@@ -80,13 +81,14 @@ select.form-select {
 }
 
 .main-section-text {
-  padding-left: 80px;
+  padding-left: 17px;
   padding-top: 70px;
 }
 
 #first-hr {
-  margin-left: 50px;
-  margin-top: 85px;
+  margin-top: 86px;
+  margin-left: 0;
+  left: 60px;
 }
 
 .main-section-text h1 {
@@ -136,9 +138,7 @@ select.form-select {
 }
 
 #second-hr {
-  margin-left: -154px;
-  margin-right: 50px;
-  margin-top: 20px;
+  left: 50px;
 }
 
 .courses-exams h2 {
@@ -279,6 +279,7 @@ select.form-select {
 
 .application-left {
   padding-top: 30px;
+  position: relative;
 }
 
 .application-left p {
@@ -298,10 +299,9 @@ select.form-select {
   padding-bottom: 30px;
 }
 
-.application-title hr {
-  margin-left: -125px;
-  margin-right: 50px;
-  margin-top: 20px;
+#third-hr {
+  right: 520px;
+  top: 35px;
 }
 
 .application-title h2 {
@@ -385,9 +385,36 @@ footer li {
   margin-left: 70px;
 }
 
-@media screen and (max-width: 768px) {
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
   .courses-exams .card {
     height: 231px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .mobile-menu-button {
+    background-color: white;
+    border: none;
+  }
+
+  .mobile-menu-button img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .main-section-image img {
+    display: none;
   }
 }
 
