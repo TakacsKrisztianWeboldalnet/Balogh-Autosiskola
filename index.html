@@ -57,11 +57,15 @@
             </nav>
         </header>
         <section class="main-section">
+            <div id="main-section-image-mobile">
+                <img src="./Images/car-orange-traffic-cones-lesson-driving-school-concept-mobile.png"
+                    alt="Oktatás gyakorlópályán a bólyák között." />
+            </div>
             <div class="container">
                 <div class="row">
-                    <hr id="first-hr" />
-                    <div class="col-6 col-md-6">
+                    <div class="col-12 col-md-6">
                         <div class="main-section-text">
+                            <hr />
                             <p class="orange-text">Lorem ipsum</p>
                             <h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h1>
                             <p class="main-section-text-paragraph">
@@ -72,19 +76,19 @@
                             <a href="#"><button class="orange-button" type="button">KAPCSOLAT</button></a>
                         </div>
                     </div>
-                    <div class="col-6 col-md-6">
-                        <div class="main-section-image">
-                            <img src="./Images/car-orange-traffic-cones-lesson-driving-school-concept.png"
-                                alt="Oktatás gyakorlópályán a bólyák között." />
-                        </div>
+                    <div class="col-0 col-md-6">
+                        <span></span>
                     </div>
                 </div>
+            </div>
+            <div class="main-section-image">
+                <img src="./Images/slider-515.jpg" alt="Oktatás gyakorlópályán a bólyák között." />
             </div>
         </section>
         <section class="courses-exams">
             <div class="container">
                 <div class="courses-exams-title">
-                    <hr id="second-hr" />
+                    <hr />
                     <h2>Tanfolyamok és Vizsgák</h2>
                 </div>
                 <div class="courses-exams-cards-container">
@@ -172,7 +176,7 @@
             <div class="container">
                 <ul class="news-cards">
                     <div class="row">
-                        <div class="col-6 col-md-6">
+                        <div class="col-12 col-md-6">
                             <li class="news-card">
                                 <div class="news-card-top">
                                     <h3>B kategóriás tanfolyam indul</h3>
@@ -190,7 +194,7 @@
                                 <a href="#">Tovább <img class="button-icon" src="./Images/arrow-right.svg" /></a>
                             </li>
                         </div>
-                        <div class="col-6 col-md-6">
+                        <div class="col-12 col-md-6">
                             <li class="news-card">
                                 <div class="news-card-top">
                                     <h3>B kategóriás tanfolyam indul</h3>
@@ -208,8 +212,8 @@
                                 <a href="#">Tovább <img class="button-icon" src="./Images/arrow-right.svg" /></a>
                             </li>
                         </div>
-                        <div class="col-6 col-md-6">
-                            <li class="news-card">
+                        <div class="col-0 col-md-6">
+                            <li class="news-card hidden-on-mobile">
                                 <div class="news-card-top">
                                     <h3>B kategóriás tanfolyam indul</h3>
                                     <p class="news-card-date">2022.08.30.</p>
@@ -226,8 +230,8 @@
                                 <a href="#">Tovább <img class="button-icon" src="./Images/arrow-right.svg" /></a>
                             </li>
                         </div>
-                        <div class="col-6 col-md-6">
-                            <li class="news-card">
+                        <div class="col-0 col-md-6">
+                            <li class="news-card hidden-on-mobile">
                                 <div class="news-card-top">
                                     <h3>B kategóriás tanfolyam indul</h3>
                                     <p class="news-card-date">2022.08.30.</p>
@@ -258,33 +262,35 @@
         </section>
         <section class="application">
             <div class="container">
-                <div class="row">
-                    <div class="col-5 col-md-5">
+                <div id="application-mobile" class="row">
+                    <div class="col-md-5">
                         <div class="application-left">
                             <div class="application-title">
-                                <hr id="third-hr"/>
+                                <hr />
                                 <h2>Jelentkezés vizsgára/tanfolyamra</h2>
                             </div>
-                            <p>Típus kiválasztás</p>
-                            <select id="bottom-form-select">
-                                <option selected class="menu-option" value="B">
-                                    B kategóriás
-                                </option>
-                                <option class="menu-option" value="C">
-                                    C kategóriás
-                                </option>
-                                <option class="menu-option" value="CE">
-                                    CE kategóriás
-                                </option>
-                                <option class="menu-option" value="D">
-                                    D kategóriás
-                                </option>
-                            </select>
-                            <a href="#"><button id="application-btn" class="orange-button"
-                                    type="button">TOVÁBB</button></a>
+                            <div id="application-bottom-mobile">
+                                <p>Típus kiválasztás</p>
+                                <select id="bottom-form-select">
+                                    <option selected class="menu-option" value="B">
+                                        B kategóriás
+                                    </option>
+                                    <option class="menu-option" value="C">
+                                        C kategóriás
+                                    </option>
+                                    <option class="menu-option" value="CE">
+                                        CE kategóriás
+                                    </option>
+                                    <option class="menu-option" value="D">
+                                        D kategóriás
+                                    </option>
+                                </select>
+                                <a href="#"><button id="application-btn" class="orange-button"
+                                        type="button">TOVÁBB</button></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-7 col-md-7">
+                    <div class="col-md-7">
                         <div class="application-right">
                             <img src="./Images/driver-is-auto-school-instructor-female-student-examination-car.png"
                                 alt="Autósiskolai oktató férfi, aki egy női tanulót vizsgáztat az oktató autóban." />
@@ -296,18 +302,18 @@
             <div class="container">
                 <div class="footer-content">
                     <div class="row">
-                        <div class="col-3 col-md-3">
+                        <div class="col-12 col-md-3">
                             <p id="footer-logo">
                                 <span class="title-first">Balogh</span>
                                 <span class="title-second">Autósiskola</span>
                             </p>
-                            <p>
+                            <p id="mobile-footer">
                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                                 erat, sed diam voluptua.
                             </p>
                         </div>
-                        <div class="col-3 col-md-3">
+                        <div class="col-12 col-md-3">
                             <div id="footer-content-other">
                                 <p class="footer-title">Oldalak</p>
                                 <ul>
@@ -321,7 +327,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-3 col-md-3">
+                        <div class="col-12 col-md-3">
                             <p class="footer-title">Dokumentumok</p>
                             <ul>
                                 <li>Vizsgainformációk</li>
@@ -329,7 +335,7 @@
                                 <li>Cookie tájékoztató</li>
                             </ul>
                         </div>
-                        <div class="col-3 col-md-3">
+                        <div class="col-12 col-md-3">
                             <p class="footer-title">Kapcsolat</p>
                             <ul>
                                 <li>+36 30 123 4567</li>
@@ -338,7 +344,10 @@
                             </ul>
                         </div>
                     </div>
-                    <p id="copyright">Copyright © Balogh Autósiskola. Minden jog fenntartva.</p>
+                    <div class="copyright">
+                        <p>Copyright © Balogh Autósiskola.</p>
+                        <p>Minden jog fenntartva.</p>
+                    </div>
                 </div>
                 <div class="footer-content"></div>
                 <div class="footer-content"></div>

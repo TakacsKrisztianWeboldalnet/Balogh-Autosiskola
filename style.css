@@ -17,6 +17,7 @@ hr {
   background-color: #e55c4f;
   width: 100px;
   height: 5px;
+  left: -150px;
 }
 
 header {
@@ -81,14 +82,10 @@ select.form-select {
 }
 
 .main-section-text {
+  position: relative;
   padding-left: 17px;
   padding-top: 70px;
-}
-
-#first-hr {
-  margin-top: 86px;
-  margin-left: 0;
-  left: 60px;
+  width: 100%;
 }
 
 .main-section-text h1 {
@@ -114,10 +111,12 @@ select.form-select {
 }
 
 .main-section-image img {
-  height: 570px;
-  width: auto;
+  height: 567px;
+  width: 50%;
+  object-fit: cover;
+  position: absolute;
   right: 0;
-  top: 0;
+  top: 100px;
 }
 
 .orange-text {
@@ -131,14 +130,11 @@ select.form-select {
 }
 
 .courses-exams-title {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   padding-bottom: 30px;
-}
-
-#second-hr {
-  left: 50px;
 }
 
 .courses-exams h2 {
@@ -279,6 +275,7 @@ select.form-select {
 
 .application-left {
   padding-top: 30px;
+  padding-bottom: 50px;
   position: relative;
 }
 
@@ -293,15 +290,11 @@ select.form-select {
 }
 
 .application-title {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   padding-bottom: 30px;
-}
-
-#third-hr {
-  right: 520px;
-  top: 35px;
 }
 
 .application-title h2 {
@@ -327,14 +320,9 @@ select.form-select {
   cursor: pointer;
 }
 
-.application-right img {
-  width: 100%;
-  height: 100%;
-}
-
 .application-right {
   position: relative;
-  display: inline-block;
+  display: flex;
   padding: 10px;
   background-color: transparent;
 }
@@ -348,8 +336,13 @@ select.form-select {
   height: 75%;
   border: 4px solid #77a6c7;
   border-radius: 15px;
-  transform: rotate(-8deg); /* Tilt the frame */
+  transform: rotate(-8deg);
   z-index: 2;
+}
+
+.application-right img {
+  width: 100%;
+  height: 100%;
 }
 
 footer {
@@ -376,9 +369,12 @@ footer li {
   padding-bottom: 15px;
 }
 
-#copyright {
-  color: #77A6C7;
+.copyright {
+  color: #77a6c7;
   text-align: right;
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
 }
 
 #footer-content-other {
@@ -389,11 +385,11 @@ footer li {
   display: none;
 }
 
-@media screen and (max-width: 992px) {
-  .courses-exams .card {
-    height: 231px;
-  }
+#main-section-image-mobile {
+  display: none;
+}
 
+@media screen and (max-width: 992px) {
   .menu {
     display: none;
   }
@@ -408,13 +404,276 @@ footer li {
   }
 
   .mobile-menu-button img {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     margin-bottom: 10px;
   }
 
-  .main-section-image img {
+  .main-section-text hr {
     display: none;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .news-card-top h3 {
+    font-size: 16px;
+  }
+
+  .news-card-top {
+    flex-direction: column;
+  }
+
+  .footer-title {
+    font-size: 16px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+
+  .main-section {
+    height: fit-content;
+  }
+
+  .main-section-text {
+    padding: 50px;
+  }
+
+  .main-section-image img {
+    height: 715.5px;
+  }
+
+  .application-right {
+    width: 100%;
+    margin-left: 100px;
+    position: absolute;
+    top: 70px;
+  }
+
+  .application-right::before {
+    top: 30px;
+    left: 30px;
+    width: 85%;
+    height: 70%;
+  }
+
+  .application-right img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-section-image {
+    display: none;
+  }
+
+  #main-section-image-mobile {
+    display: flex;
+    width: 100%;
+    height: 450px;
+  }
+
+  #main-section-image-mobile img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-section-text {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    align-items: center;
+    justify-content: center;
+    height: 1155px;
+    padding-top: 70px;
+  }
+
+  .copyright {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .copyright p {
+    margin: 0;
+  }
+
+  #footer-content-other {
+    margin-left: 0;
+  }
+
+  .hidden-on-mobile {
+    display: none;
+  }
+
+  .news-card {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .footer-content {
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+  }
+
+  #mobile-footer {
+    margin-bottom: 80px;
+  }
+
+  footer ul {
+    margin-bottom: 80px;
+  }
+
+  .application {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+    flex-direction: column-reverse;
+  }
+
+  .application-title {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .courses-exams-title {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .application-right {
+    border-radius: 110px;
+    overflow: hidden;
+    width: 90%;
+    margin-left: 0;
+    display: inline-block;
+    position: initial;
+    margin-left: 0;
+  }
+
+  .application-right img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  .application-right::before {
+    top: 30px;
+    left: 30px;
+    width: 88%;
+    height: 87%;
+    border: 6px solid #77a6c7;
+    transform: rotate(-8deg);
+    z-index: 2;
+  }
+
+  #application-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  hr {
+    top: -40px;
+    left: 40%;
+  }
+
+  #bottom-form-select {
+    width: 318px;
+    padding-right: 180px;
+  }
+
+  #application-bottom-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-first:first {
+    font-size: 20px;
+  }
+
+  .title-first {
+    font-size: 25px;
+  }
+
+  .title-second:first {
+    font-size: 20px;
+  }
+
+  .title-second {
+    font-size: 25px;
+  }
+
+  .main-section-text h1 {
+    font-size: 30px;
+  }
+
+  .courses-exams h2 {
+    font-size: 25px;
+  }
+
+  .application-title h2 {
+    font-size: 25px;
+  }
+
+  .courses-exams .card {
+    height: 320px;
+  }
+
+  #news-btn {
+    height: 67px;
+    width: 165px;
+  }
+
+  .application-left {
+    padding-bottom: 0;
+  }
+
+  .application-right img {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #main-section-image-mobile {
+    display: flex;
+    width: 100%;
+    height: 350px;
+  }
+
+  .application-right {
+    border-radius: 80px;
+  }
+}
+
+@media screen and (max-width: 418px) {
+  footer {
+    height: auto;
+  }
+
+  .copyright {
+    margin: 0;
+  }
+
+  #main-section-image-mobile {
+    display: flex;
+    width: 100%;
+    height: 280px;
+  }
+
+  .application-right {
+    border-radius: 40px;
   }
 }
 
