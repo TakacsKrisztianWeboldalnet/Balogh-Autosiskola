@@ -443,11 +443,21 @@ footer li {
     height: 715.5px;
   }
 
+  .application-title {
+    text-wrap: wrap;
+    width: 300px;
+  }
+
+  #bottom-form-select {
+    width: 300px;
+    padding-right: 180px;
+  }
+
   .application-right {
     width: 100%;
-    margin-left: 100px;
     position: absolute;
-    top: 70px;
+    top: 100px;
+    left: 0px;
   }
 
   .application-right::before {
@@ -545,6 +555,13 @@ footer li {
     align-items: center;
   }
 
+  .application-left {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
   .courses-exams-title {
     text-align: center;
     justify-content: center;
@@ -633,6 +650,7 @@ footer li {
   #news-btn {
     height: 67px;
     width: 165px;
+    text-wrap: nowrap;
   }
 
   .application-left {
@@ -674,6 +692,21 @@ footer li {
 
   .application-right {
     border-radius: 40px;
+  }
+}
+
+@media screen and (max-width: 353px) {
+  .mobile-menu-button img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .title-first {
+    font-size: 15px;
+  }
+
+  .title-second {
+    font-size: 15px;
   }
 }
 
