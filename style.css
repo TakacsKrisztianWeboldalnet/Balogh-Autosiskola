@@ -150,7 +150,7 @@ select.form-select {
 .courses-exams button {
   background-color: #316789;
   border: 0;
-  border-radius: 16px;
+  border-radius: 12px;
   height: 35px;
   width: 107px;
   color: white;
@@ -381,11 +381,15 @@ footer li {
   margin-left: 70px;
 }
 
+#main-section-image-mobile {
+  display: none;
+}
+
 .mobile-menu {
   display: none;
 }
 
-#main-section-image-mobile {
+.mobile-menu-container {
   display: none;
 }
 
@@ -396,6 +400,66 @@ footer li {
 
   .mobile-menu {
     display: block;
+    z-index: 10;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .mobile-menu-button {
+    border: none;
+    outline: none;
+  }
+
+  .mobile-menu-button:focus {
+    outline: none;
+  }
+
+  .mobile-menu-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 65.5px;
+    right: -150%;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transition: right 0.5s ease;
+  }
+
+  .mobile-menu-container.open {
+    right: 0;
+  }
+
+  .mobile-menu-container ul {
+    padding: 20px 50px 10px 50px;
+    margin-bottom: 0;
+  }
+
+  #mobile-courses-exams-sidebar {
+    border-top: 1px solid gray;
+  }
+
+  #mobile-courses-exams-sidebar span {
+    font-weight: 900;
+    text-decoration: underline;
+    font-size: 20px;
+  }
+
+  .mobile-menu-container li {
+    margin-bottom: 10px;
+  }
+
+  .mobile-menu-container a {
+    color: black;
+  }
+
+  .mobile-menu-main-link {
+    font-weight: 600;
   }
 
   .mobile-menu-button {
@@ -470,6 +534,32 @@ footer li {
   .application-right img {
     width: 100%;
     height: 100%;
+  }
+
+  .courses-exams .card {
+    height: 280px;
+    text-align: center;
+  }
+
+  .card-bottom {
+    padding-top: 0;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .courses-exams .card h3 {
+    font-size: 20px;
+  }
+
+  .courses-exams .card-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    padding: 0;
+    border: none;
+    background-color: white;
   }
 }
 
@@ -675,6 +765,16 @@ footer li {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .courses-exams .card h3 {
+    font-size: 16px;
+  }
+
+  .courses-exams .card {
+    height: 280px;
+  }
+}
+
 @media screen and (max-width: 418px) {
   footer {
     height: auto;
@@ -692,6 +792,11 @@ footer li {
 
   .application-right {
     border-radius: 40px;
+  }
+
+  #bottom-form-select {
+    width: 200px;
+    padding-right: 0;
   }
 }
 
