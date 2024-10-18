@@ -55,9 +55,9 @@ footer a:hover {
 }
 
 .side-page {
-  padding-top: 27.7vh;
   text-align: center;
-  padding-bottom: 16vh;
+  padding-top: 30vh;
+  padding-bottom: 20vh;
 }
 
 .title-first {
@@ -94,7 +94,7 @@ select.form-select {
   box-shadow: none;
   outline: none;
   cursor: pointer;
-  width: 195px;
+  width: 100%;
 }
 
 .menu-option {
@@ -104,7 +104,7 @@ select.form-select {
 .main-section {
   background-color: #e8eef3;
   padding-top: 80px;
-  height: 669px;
+  padding-bottom: 50px;
   margin-bottom: 70px;
 }
 
@@ -131,8 +131,7 @@ select.form-select {
   background-color: #e55c4f;
   color: white;
   border: 0;
-  width: 200px;
-  height: 67px;
+  padding: 20px 50px;
   border-radius: 12px;
   font-size: 16px;
   font-weight: bold;
@@ -177,14 +176,14 @@ select.form-select {
 .courses-exams h3 {
   font-size: 23px;
   font-weight: 900;
+  margin-bottom: 15px;
 }
 
 .courses-exams button {
   background-color: #316789;
   border: 0;
   border-radius: 12px;
-  height: 35px;
-  width: 107px;
+  padding: 6px 12px;
   color: white;
 }
 
@@ -192,7 +191,7 @@ select.form-select {
   background-color: #e8eef3;
   width: 100%;
   border-radius: 12px;
-  padding: 15px;
+  padding: 30px;
 }
 
 .courses-exams-cards {
@@ -206,10 +205,11 @@ select.form-select {
 .courses-exams .card {
   height: 100%;
   border-radius: 8px;
+  padding-bottom: 20px;
 }
 
 .card-text {
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 
 .card-title {
@@ -297,9 +297,9 @@ select.form-select {
   background-color: white;
   color: #102647;
   font-weight: bold;
-  height: 67px;
-  width: 257px;
+  padding: 21px 55px;
   border-radius: 12px;
+  text-wrap: nowrap;
 }
 
 .button-icon {
@@ -311,7 +311,7 @@ select.form-select {
 }
 
 .application-left {
-  padding-top: 30px;
+  padding-top: 35px;
   padding-bottom: 50px;
   position: relative;
 }
@@ -323,7 +323,7 @@ select.form-select {
 }
 
 #application-btn {
-  width: 165px;
+  padding: 20px 50px;
 }
 
 .application-title {
@@ -342,15 +342,15 @@ select.form-select {
 #bottom-form-select {
   border: 0;
   border-radius: 12px;
-  width: 396px;
-  height: 69px;
+  width: 90%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-right: 260px;
   margin-bottom: 40px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png")
-    #e8eef3 no-repeat 96% !important;
+  background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") #e8eef3 no-repeat 96% !important;
 }
 
 #bottom-form-select:hover {
@@ -384,8 +384,9 @@ select.form-select {
 
 footer {
   background-color: #e8eef3;
-  height: 442px;
   padding-top: 80px;
+  bottom: 0;
+  width: 100%;
 }
 
 footer ul {
@@ -436,16 +437,9 @@ footer a {
 
 .courses-exams .card-footer {
   width: 100%;
-  position: absolute;
-  bottom: 20px;
-  left: 0;
   padding: 0;
   border: none;
   background-color: white;
-}
-
-.courses-exams .card-footer button {
-  margin-left: 20px;
 }
 
 .dropdown {
@@ -458,15 +452,19 @@ footer a {
   }
 
   .main-section-image img {
-    height: 592px;
+    height: 640px;
   }
 
-  .main-section-text h1{
+  .main-section-text h1 {
     font-size: 35px;
   }
 
   .main-section-text {
     padding-bottom: 50px;
+  }
+
+  #bottom-form-select {
+    padding-right: 210px;
   }
 }
 
@@ -499,8 +497,8 @@ footer a {
     top: 65.5px;
     right: -150%;
     width: fit-content;
-    height: fit-content;
-    justify-content: center;
+    height: 100vh;
+    justify-content: flex-start;
     align-items: center;
     background-color: white;
     box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.25);
@@ -573,21 +571,23 @@ footer a {
   }
 
   .main-section-text {
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .main-section-image img {
-    height: 680px;
+    height: 610px;
   }
 
   .application-title {
     text-wrap: wrap;
-    width: 300px;
   }
 
   #bottom-form-select {
-    width: 300px;
-    padding-right: 180px;
+    padding-right: 150px;
+    padding-left: 20px;
   }
 
   .application-right {
@@ -615,13 +615,13 @@ footer a {
 
   .card-bottom {
     padding-top: 0;
-    padding-bottom: 5px;
+    padding-bottom: 30px;
     padding-left: 10px;
     padding-right: 10px;
   }
 
   .courses-exams .card h3 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .courses-exams .card-footer {
@@ -640,6 +640,36 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    height: 100px;
+  }
+
+  .title-first {
+    font-size: 20px !important;
+  }
+
+  .title-second {
+    font-size: 20px !important;
+  }
+
+  .mobile-menu {
+    top: 20px;
+    right: 30px;
+  }
+
+  .mobile-menu-button img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar {
+    height: 100%;
+  }
+
+  .main-section {
+    padding-top: 100px;
+  }
+
   .main-section-image {
     display: none;
   }
@@ -665,7 +695,6 @@ footer a {
   footer {
     align-items: center;
     justify-content: center;
-    height: 1155px;
     padding-top: 70px;
   }
 
@@ -674,6 +703,7 @@ footer a {
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    padding-bottom: 20px;
   }
 
   .copyright p {
@@ -689,8 +719,9 @@ footer a {
   }
 
   .news-card {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 30px;
   }
 
   .footer-content {
@@ -734,6 +765,15 @@ footer a {
     align-items: center;
   }
 
+  .courses-exams-cards-container {
+    padding: 5px;
+  }
+
+  .card-bottom {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .application-right {
     border-radius: 110px;
     overflow: hidden;
@@ -766,12 +806,13 @@ footer a {
 
   hr {
     top: -40px;
-    left: 40%;
+    left: calc(50% - 50px);
   }
 
   #bottom-form-select {
-    width: 318px;
     padding-right: 180px;
+    padding-left: 20px;
+    width: 100%;
   }
 
   #application-bottom-mobile {
@@ -807,12 +848,6 @@ footer a {
 
   .application-title h2 {
     font-size: 25px;
-  }
-
-  #news-btn {
-    height: 67px;
-    width: 165px;
-    text-wrap: nowrap;
   }
 
   .application-left {
@@ -857,17 +892,22 @@ footer a {
   }
 
   #bottom-form-select {
-    width: 200px;
-    padding-right: 0;
+    width: 100%;
+    padding-right: 150px;
+  }
+
+  .application-right {
+    width: 80%;
+  }
+
+  .application-right::before {
+    top: 20px;
+    left: 50px;
+    width: 70%;
   }
 }
 
 @media screen and (max-width: 353px) {
-  .mobile-menu-button img {
-    width: 20px;
-    height: 20px;
-  }
-
   .title-first {
     font-size: 15px;
   }
